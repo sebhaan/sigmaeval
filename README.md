@@ -103,7 +103,7 @@ $$
 5. **Final CRPS Score**: The CRPS score for all samples is computed by averaging the individual CRPS values across all data points:
 
 $$
-\text{CRPS} = \frac{1}{n} \sum\limits_{i=1}^n \text{CRPS}_i
+\text{CRPS} = \frac{1}{n} \sum_{i=1}^{n} \text{CRPS}_i
 $$
 
    Where $n$ is the number of samples.
