@@ -89,15 +89,15 @@ $$
 
 3. **CRPS Computation**: The CRPS is then calculated by summing the squared difference between the empirical CDF and the predicted CDF across all quantile levels, weighted by the difference between consecutive quantiles:
 
-$$
-\text{CRPS}_i = \sum_{\alpha} (F_{\text{pred}}(\alpha) - F_{\text{emp}}(\alpha))^2 \Delta q(\alpha)
-$$
+   $$
+   \text{CRPS}_i = \sum_{\alpha} ( F_{\text{pred}}(\alpha) - F_{\text{emp}}(\alpha) )^2 \Delta q(\alpha)
+   $$
 
 
-Where:
-* $F_{\text{pred}}(\alpha)$ is the predicted CDF at quantile level $\alpha$
-* $F_{\text{emp}}(\alpha)$ is the empirical CDF at the true value $y_{\text{true}}$
-* $\Delta q(\alpha) = q(\alpha_{i+1}) - q(\alpha_i)$ is the difference between consecutive quantile levels
+   Where:
+   * $F_{\text{pred}}(\alpha)$ is the predicted CDF at quantile level $\alpha$
+   * $F_{\text{emp}}(\alpha)$ is the empirical CDF at the true value $y_{\text{true}}$
+   * $\Delta q(\alpha) = q(\alpha_{i+1}) - q(\alpha_i)$ is the difference between consecutive quantile levels
 
 4. **Normalization**: To make the CRPS scale-independent, the score is often normalized by dividing by the standard deviation of the true values. This normalization ensures that the CRPS is not affected by the scale of the data, making it comparable across datasets.
 
