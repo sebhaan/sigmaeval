@@ -26,10 +26,11 @@ pip install sigmaeval
 ## How-To Example with TabPFN
 
 ```python
+import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn import datasets
 from tabpfn import TabPFNRegressor
-from sigmaeval import crps_quantile
+from sigmaeval.sigmaeval import crps_quantile
 
 # Load dataset (regression)
 X, y = datasets.fetch_california_housing(return_X_y=True)
