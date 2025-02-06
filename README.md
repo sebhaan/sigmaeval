@@ -78,20 +78,20 @@ Given the **predicted quantiles** and the **true value**, the CRPS is computed a
 
 1. **Empirical CDF**: The empirical CDF of the observed true value $y_{\text{true}}$ is represented as an indicator function. This function is 0 for values less than $y_{\text{true}}$ and 1 for values greater than or equal to $y_{\text{true}}$.
 
-   $$
-   F_{\text{emp}}(y_{\text{true}}) = \begin{cases}
-   0 & \text{if } y < y_{\text{true}} \\
-   1 & \text{if } y \geq y_{\text{true}}
-   \end{cases}
-   $$
+$$
+F_{\text{emp}}(y_{\text{true}}) = \begin{aligned}
+&0 && \text{if } y < y_{\text{true}} \\
+&1 && \text{if } y \geq y_{\text{true}}
+\end{aligned}
+$$
 
 2. **Predicted CDF**: The predicted CDF at each quantile level $\alpha$ is obtained by sorting the predicted quantiles for each sample. For each quantile level $\alpha$, the CDF value is computed based on the predicted quantiles.
 
 3. **CRPS Computation**: The CRPS is then calculated by summing the squared difference between the empirical CDF and the predicted CDF across all quantile levels, weighted by the difference between consecutive quantiles:
 
-   $$
-   \text{CRPS}_i = \sum_{\alpha} \left( F_{\text{pred}}(\alpha) - F_{\text{emp}}(\alpha) \right)^2 \Delta q(\alpha)
-   $$
+$$
+\text{CRPS}_i = \sum_{\alpha} \Big( F_{\text{pred}}(\alpha) - F_{\text{emp}}(\alpha) \Big)^2 \Delta q(\alpha)
+$$
 
    Where:
    * $F_{\text{pred}}(\alpha)$ is the predicted CDF at quantile level $\alpha$
@@ -102,9 +102,9 @@ Given the **predicted quantiles** and the **true value**, the CRPS is computed a
 
 5. **Final CRPS Score**: The CRPS score for all samples is computed by averaging the individual CRPS values across all data points:
 
-   $$
-   \text{CRPS} = \frac{1}{n} \sum_{i=1}^n \text{CRPS}_i
-   $$
+$$
+\text{CRPS} = \frac{1}{n} \sum\limits_{i=1}^n \text{CRPS}_i
+$$
 
    Where $n$ is the number of samples.
 
