@@ -1,9 +1,9 @@
 # Sigmaeval: Scoring Uncertainty and Quantile Predictions
 
  
-**Sigmaeval** provides a collection of evaluation metrics specifically designed for scoring probabilistic predictions, uncertainty estimates, and quantile predictions. These metrics are particularly useful for models that output probability distributions or quantile estimates instead of point predictions. It can be used for both **probabilistic regression** and **classification models**, making it versatile for a range of machine learning tasks.  Unlike metrics from **scikit-learn**, which focus on point prediction accuracy, **Sigmaeval** evaluates the quality of uncertainty estimates and probabilistic forecasts without replacing them.
+**Sigmaeval** provides a collection of evaluation metrics specifically designed for scoring probabilistic predictions, uncertainty estimates, and quantile predictions. These metrics are particularly useful for models that output probability distributions or quantile estimates instead of point predictions. It can be used for both **probabilistic regression** and **classification models**, making it versatile for a range of machine learning tasks.  Unlike metrics from `scikit-learn`, which focus on point prediction accuracy, **Sigmaeval** evaluates the quality of uncertainty estimates and probabilistic forecasts without replacing them.
 
-While there are some libraries, such as scoringrules and UNIQUE, that provide metrics for probabilistic forecasts, Sigmaeval fills an important gap by offering specialized evaluation tools specifically designed for assessing the quality of uncertainty and quantile predictions.
+While there are some libraries, such as [scoringrules](https://github.com/frazane/scoringrules?utm_source=chatgpt.com) and [UNIQUE](https://github.com/Novartis/UNIQUE?utm_source=chatgpt.com), that provide metrics for probabilistic forecasts, Sigmaeval fills an important gap by offering specialized evaluation tools specifically designed for assessing the quality of uncertainty and quantile predictions.
 
 
 ## Features
