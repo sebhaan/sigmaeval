@@ -93,6 +93,11 @@ $$
    \text{CRPS}_i = \sum_{\alpha} (F_{\text{pred}}(\alpha) - F_{\text{emp}}(\alpha))^2 \Delta q(\alpha)
    $$
 
+   $$
+  \text{CRPS}_i = \sum_{\alpha} \left( F_{\text{pred}}(\alpha) - F_{\text{emp}}(\alpha) \right)^2 \Delta q(\alpha)
+  $$
+
+
    Where:
    * $F_{\text{pred}}(\alpha)$ is the predicted CDF at quantile level $\alpha$
    * $F_{\text{emp}}(\alpha)$ is the empirical CDF at the true value $y_{\text{true}}$
