@@ -89,10 +89,9 @@ $$
 
 3. **CRPS Computation**: The CRPS is then calculated by summing the squared difference between the empirical CDF and the predicted CDF across all quantile levels, weighted by the difference between consecutive quantiles:
 
-
-$$
-\text{CRPS}_i = \sum_{\alpha} (F_{\text{pred}}(\alpha) - F_{\text{emp}}(\alpha))^2 \Delta q(\alpha)
-$$
+   $$
+   \text{CRPS}_i = \sum_{\alpha} (F_{\text{pred}}(\alpha) - F_{\text{emp}}(\alpha))^2 \Delta q(\alpha)
+   $$
 
    Where:
    * $F_{\text{pred}}(\alpha)$ is the predicted CDF at quantile level $\alpha$
